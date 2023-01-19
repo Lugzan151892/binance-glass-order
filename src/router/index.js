@@ -1,6 +1,6 @@
 import OrderBook from '@/views/OrderBook.vue';
 import StatusList from '@/views/StatusList.vue';
-import { createRouter, createWebHistory} from 'vue-router';
+import { createRouter, createWebHashHistory} from 'vue-router';
 
 const routes = [
     { path: '/', component: OrderBook },
@@ -8,7 +8,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes,
 });
 

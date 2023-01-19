@@ -56,7 +56,7 @@ onMounted(() => {
   }
 });
 
-const sortMaxToMin = (a, b) => a[0] * a[1] < b[0] * b[1] ? 1 : -1;
+const sortMaxToMin = (a, b) => a[0] < b[0] ? 1 : -1;
 
 </script>
 <style scoped>

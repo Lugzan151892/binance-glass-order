@@ -3,10 +3,10 @@
         <div v-for="item, index in data">
             <div :key="index" class="d-flex flex-row">
                 <div class="table-item">
-                {{ getRoundedNumber(item[0]) }}
+                {{ getRoundedNumber(item[1]) }}
                 </div>
                 <div class="table-item">
-                {{ getRoundedNumber(item[1]) }}
+                {{ getRoundedNumber(item[0]) }}
                 </div>
                 <div v-if="!store.isMobile" class="table-item">
                 {{ getRoundedNumber(item[0] * item[1]) }}
